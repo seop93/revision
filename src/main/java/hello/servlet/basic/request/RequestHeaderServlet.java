@@ -14,7 +14,6 @@ public class RequestHeaderServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        super.service(request, response);
         printStartLine(request);
         printHeaders(request);
         printHeadersUtils(request);
