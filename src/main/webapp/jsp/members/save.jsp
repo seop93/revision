@@ -1,3 +1,4 @@
+
 <%@ page import="hello.servlet.domain.member.Member" %>
 <%@ page import="hello.servlet.domain.member.MemberRepository" %><%--
   Created by IntelliJ IDEA.
@@ -24,9 +25,10 @@
 <body>
 성공
 <ul>
-  <li>id=<%=member.getId()%></li>
-  <li>id=<%=member.getUsername()%></li>
-  <li>id=<%=member.getAge()%></li>
+<%--  <li>id=<%=((Member)request.getAttribute("member")).getId()%></li>--%>
+  <li>id=${member.id}</li>
+  <li>username=${member.username}</li>
+  <li>age=${member.age}</li>
 </ul>
 <a href="/index.html">메인</a>
 </body>
